@@ -1,0 +1,101 @@
+@import "tailwindcss";
+
+@theme inline {
+  /* Brand Colors */
+  --color-brand-dark: #252625;
+  --color-brand-light: #F2F2F2;
+  --color-brand-dark-muted: #3A3B3A;
+  --color-brand-light-muted: #DCDCDC;
+
+  /* Semantic aliases */
+  --color-background: var(--color-brand-light);
+  --color-foreground: var(--color-brand-dark);
+  --color-surface: #ffffff;
+  --color-border: var(--color-brand-light-muted);
+
+  /* Fonts */
+  --font-display: var(--font-space-grotesk), "Space Grotesk", sans-serif;
+  --font-body: var(--font-inter), "Inter", sans-serif;
+  --font-hand: var(--font-caveat), "Caveat", cursive;
+  --font-sans: var(--font-inter), "Inter", sans-serif;
+}
+
+/* ── Base ── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #F2F2F2;
+  color: #252625;
+  font-family: var(--font-inter), "Inter", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ── Dot-grid background pattern ── */
+.dot-grid {
+  background-image: radial-gradient(circle, #b0b0b0 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+/* ── Handwritten font helper ── */
+.font-hand {
+  font-family: var(--font-caveat), "Caveat", cursive;
+}
+
+/* ── Display font helper ── */
+.font-display {
+  font-family: var(--font-space-grotesk), "Space Grotesk", sans-serif;
+}
+
+/* ── Outlined name box ── */
+.name-box {
+  border: 3px solid #252625;
+  display: inline-block;
+  padding: 0.25rem 1.5rem;
+  letter-spacing: -0.04em;
+}
+
+/* ── Polaroid frame ── */
+.polaroid {
+  background: #ffffff;
+  padding: 10px 10px 32px 10px;
+  box-shadow: 3px 4px 18px rgba(37, 38, 37, 0.15);
+}
+
+/* ── Annotation tag (pill label) ── */
+.annotation-tag {
+  background: #ffffff;
+  border: 1.5px solid #252625;
+  border-radius: 999px;
+  font-family: var(--font-caveat), "Caveat", cursive;
+  font-size: 1rem;
+  padding: 2px 14px;
+  white-space: nowrap;
+  display: inline-block;
+}
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F2F2F2;
+}
+::-webkit-scrollbar-thumb {
+  background: #252625;
+  border-radius: 3px;
+}
+
+/* ── Focus ring ── */
+:focus-visible {
+  outline: 2px solid #252625;
+  outline-offset: 2px;
+}

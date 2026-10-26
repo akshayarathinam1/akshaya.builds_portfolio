@@ -52,7 +52,7 @@ export default function About() {
               <div className="relative w-36 h-44 md:w-44 md:h-56 overflow-hidden bg-[#DCDCDC]">
                 <Image
                   src="/profile.jpg"
-                  alt="Akshaya"
+                  alt="Akshaya Rathinam — Full-Stack Developer"
                   fill
                   className="object-cover object-[center_20%]"
                   sizes="(max-width: 768px) 144px, 176px"

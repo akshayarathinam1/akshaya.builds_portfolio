@@ -45,7 +45,11 @@ const contactLinks = [
 
 export default function Contact() {
   return (
-    <section id="contact" className="bg-[#F2F2F2] py-24 px-6 md:px-12 lg:px-20">
+    <section
+      id="contact"
+      aria-label="Contact Akshaya Rathinam — Full-Stack Developer"
+      className="bg-[#F2F2F2] py-24 px-6 md:px-12 lg:px-20"
+    >
       <div className="max-w-6xl mx-auto">
         {/* Section label */}
         <motion.div
@@ -77,6 +81,11 @@ export default function Contact() {
               something real.
             </span>
           </h2>
+          <p className="font-body text-base text-[#252625]/60 mt-6 max-w-lg leading-relaxed">
+            Open to freelance web development projects — websites, web
+            applications, SaaS products, and MVPs. Get in touch via email or
+            WhatsApp to discuss your idea.
+          </p>
         </motion.div>
 
         {/* Two-column row */}

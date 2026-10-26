@@ -12,7 +12,11 @@ export default function Projects() {
 
   return (
     <>
-      <section id="projects" className="py-24 px-6 bg-[#252625]">
+      <section
+        id="projects"
+        aria-label="Web development projects by Akshaya Rathinam"
+        className="py-24 px-6 bg-[#252625]"
+      >
         <div className="max-w-5xl mx-auto">
           {/* Header */}
           <motion.div
@@ -28,6 +32,10 @@ export default function Projects() {
             <h2 className="font-display text-4xl md:text-5xl font-bold text-[#F2F2F2] tracking-tight">
               Selected Work
             </h2>
+            <p className="font-body text-sm text-[#F2F2F2]/40 mt-3 max-w-lg">
+              Web development and design projects — from live client websites to
+              concept applications built using modern technologies.
+            </p>
           </motion.div>
 
           {/* Tab selectors */}
